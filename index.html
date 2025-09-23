@@ -51,13 +51,52 @@
         </div>
        
         <hr>
-        <div class="contact-me">
-            <h2>Contact Me</h2>
-          <h3>Get in touch</h3>
-          <p class="contact">I would love to hear from you. Please feel free to reach out and I will respond as soon as possible.</p>
-          <br><br><br>
-            <script src="https://lovable.app/embed.js" data-bot-id="YOUR_UNIQUE_BOT_ID"></script>
-            style="border: none; width: 10%; height: 500px;"></iframe>
+       <hr>
+<div class="contact-me">
+    <h2>Contact Me</h2>
+    <h3>Get in touch</h3>
+    <p class="contact">I would love to hear from you. Please feel free to reach out and I will respond as soon as possible.</p>
+    <br><br><br>
+    
+    <!-- This is the button that will open the chatbot -->
+    <a href="#" class="btn" id="open-chatbot-btn">START CHATBOT</a>
+
+    <!-- A container for the chatbot once it loads -->
+    <div id="chatbot-container" style="display: none;"></div>
+</div>
+
+<script>
+    document.getElementById("open-chatbot-btn").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevents the link from jumping the page
+
+        // Get a reference to the chatbot container
+        const chatbotContainer = document.getElementById("chatbot-container");
+        
+        // Hide the button and show the container
+        this.style.display = "none";
+        chatbotContainer.style.display = "block";
+        
+        // Create the script tag for the Lovable.app chatbot
+        const script = document.createElement("script");
+        script.src = "https://lovable.app/embed.js";
+        script.dataset.botId = "YOUR_UNIQUE_BOT_ID"; // **IMPORTANT: Replace with your actual Bot ID**
+        
+        // Append the script to the chatbot container to load the bot
+        chatbotContainer.appendChild(script);
+
+        // Optional: Add a message to let the user know what is happening
+        const loadingMessage = document.createElement("p");
+        loadingMessage.textContent = "Loading chatbot...";
+        loadingMessage.style.textAlign = "center";
+        chatbotContainer.appendChild(loadingMessage);
+        
+        // Once the chatbot is loaded, the loading message will be replaced
+        script.onload = function() {
+            loadingMessage.remove();
+        };
+    });
+</script>
+
           </div>      
     </div>
       
@@ -72,6 +111,7 @@
 
 </html>
 <!DOCTYPE html>
+
 
 
 
