@@ -152,3 +152,29 @@ a:hover {
   border-radius: 8px;
 }
 
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #30b6b6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.05);
+  background-color: #2a9b9b;
+}
+
+.chatbot-button-icon {
+  width: 30px;
+  height: 30px;
+}
