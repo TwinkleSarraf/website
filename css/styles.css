@@ -409,3 +409,29 @@ text-decoration: none;
   border: none;
   border-radius: 8px;
 }
+
+/* Floating Chatbot Button */
+.chatbot-float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0078ff;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.chatbot-float-btn:hover {
+  transform: scale(1.1);
+  background-color: #005bb5;
+}
