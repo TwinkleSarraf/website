@@ -307,3 +307,56 @@ text-decoration: none;
   transform: scale(1.1);
   cursor: pointer;
 }
+
+/* Floating Chatbot Container */
+.chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: none;
+  z-index: 9999;
+}
+
+/* When open, show the chatbot */
+.chatbot-container.open {
+  display: block;
+}
+
+/* Chatbot iframe fills the container */
+.chatbot-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Floating Button */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #0078ff;
+  color: white;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10000;
+}
+
+.chatbot-toggle:hover {
+  background-color: #005ec2;
+  transform: scale(1.1);
+}
