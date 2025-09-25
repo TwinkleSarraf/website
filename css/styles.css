@@ -238,7 +238,7 @@ text-decoration: none;
       margin-top: 15px;
     }
 
-<style>
+
         /* ✅ Styling for the Contact Me section */
         .contact-me-container {
             max-width: 400px;
@@ -280,4 +280,30 @@ text-decoration: none;
         .solid-contact-btn:hover {
             background-color: #217dbb;
         }
-    </style>
+   
+
+/* Chatbot Floating Button */
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0078ff; /* Change to your theme color */
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+
+.chatbot-button:hover {
+  background-color: #005ec2;
+  transform: scale(1.1);
+  cursor: pointer;
+}
