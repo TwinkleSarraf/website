@@ -10,6 +10,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:wght@700&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        /* ✅ Styling for the Contact Me section */
+        .contact-me-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fafafa;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .contact-heading {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #1a3147;
+        }
+
+        .contact-description {
+            font-size: 16px;
+            color: #4a4a4a;
+            margin-top: 15px;
+        }
+
+        /* ✅ Solid Rectangle Button */
+        .solid-contact-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 14px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 0; /* <-- removes rounded corners, making it rectangular */
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(30, 90, 200, 0.1);
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .solid-contact-btn:hover {
+            background-color: #217dbb;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,21 +76,21 @@
             <h2>Skills Overview</h2>
             <div class="skill-row">
                 <h3>Web Development</h3>
-                <img src="https://media4.giphy.com/media/paTz7UZbPfTZFRYnnB/200w.webp?cid=ecf05e47pl5brpi3peafz3ci7km2gay94dr3y2otnn8x5gl8&rid=200w.webp&ct=s" alt="dev">
+                <img src="https://media4.giphy.com/media/paTz7UZbPfTZFRYnnB/200w.webp" alt="dev">
                 <p class="def">As a computer science professional with a BTech degree, I bring a blend of technical expertise and creative thinking to the field of web development and data analysis. My solid foundation in software development allows me to tackle complex challenges with ease and deliver exceptional results for my clients. I possess strong communication skills and enjoy working with teams to bring projects to a successful conclusion. I also have a passion for staying current in the field, always exploring new technologies and methodologies to enhance my abilities. My dedication to quality work and love for technology sets me apart as a capable and dependable solution provider.</p>
             </div>
 
             <div class="skill-row">
                 <h3>Interests</h3>
-                <img height="150px" width="150px" src="https://media3.giphy.com/media/BctJzBJ1kY5ybbfFuf/200w.webp?cid=ecf05e474myn614qprbnn39nwhcpjm9d49xqgrvmlb9se16f&rid=200w.webp&ct=s" alt="ukulele">
+                <img height="150px" width="150px" src="https://media3.giphy.com/media/BctJzBJ1kY5ybbfFuf/200w.webp" alt="ukulele">
                 <p class="int">I am a Programmer in the morning, Ukulelist in the evening, and Chef in the midnight. Also, I'm on the hunt for what I've not become yet.</p>
             </div>
         </div>
         <hr>
 
-        <!-- ✅ Keep only this contact section once -->
+        <!-- ✅ Contact Me section -->
         <div class="contact-me-container">
-            <h3 class="contact-heading">Contact Me</h3>
+            
             <a href="mailto:sarraf.twinkle0501@gmail.com" class="solid-contact-btn">Contact Me</a>
             <p class="contact-description">
                 I would love to hear from you. Click the button above to send me an email.
