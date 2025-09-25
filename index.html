@@ -62,21 +62,24 @@
         <p class="copy">© 2025 Twinkle Sarraf</p>
     </div>
 
-<!-- Chatbot Section -->
-<div class="chatbot-container">
-  <h3 class="chatbot-heading">Let's Chat</h3>
-  <iframe 
-    src="https://chatfuel-859db4.zapier.app"
-    class="chatbot-iframe"
-    title="Chatbot"
-    loading="lazy"
-    allow="clipboard-read; clipboard-write"
-    sandbox="allow-scripts allow-same-origin allow-forms">
-  </iframe>
-</div>
-</div>
+
+<!-- Chatbot Floating Button -->
+<button class="chatbot-float-btn" onclick="openChatbot()">
+  💬
+</button>
+
+<script>
+  function openChatbot() {
+    window.open(
+      "https://chatfuel-859db4.zapier.app", 
+      "chatbotWindow", 
+      "width=400,height=600,resizable=yes,scrollbars=yes"
+    );
+  }
+</script>
 </body>
 </html>
+
 
 
 
